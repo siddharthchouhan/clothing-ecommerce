@@ -1,0 +1,111 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav ul li {
+  transition: all 0.3s ease;
+  border-bottom: 2px solid white;
+}
+nav ul li.active {
+  transform: translateY(-10px);
+  border-bottom: 2px solid darkred;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+#cards {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#cards:hover {
+  transform: scale(1.05);
+}
+
+input:focus {
+  box-shadow: none !important;
+  border: 1px solid black !important;
+}
+
+.sizeActive {
+  background-color: rgb(63, 63, 63) !important;
+  color: white !important;
+}
+.quantity{
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  nav ul li.active {
+    transform: translateY(-10px);
+    border-bottom: none;
+  }
+  nav ul li {
+    border-bottom: none;
+  }
+  nav > div {
+    max-width: 90% !important;
+  }
+  #heroImg {
+    display: none;
+  }
+  #heroRight {
+    width: 100% !important;
+  }
+  #offerImage {
+    display: none;
+  }
+  #offerRight {
+    width: 90% !important;
+  }
+  #sorting {
+    justify-content: center !important;
+  }
+  .displayPrMain {
+    flex-wrap: wrap;
+  }
+  .cartbottom {
+    flex-wrap: wrap;
+  }
+
+  .carthead {
+    display: none !important;
+  }
+  .cartbody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2%;
+  }
+  .cartbody td {
+    width: 80% !important;
+    border: none !important;
+    padding-left: 0 !important;
+  }
+
+  .cartbody td:nth-child(5) {
+    display: none;
+  }
+  .removeicon {
+    background-color: rgb(220, 53, 69);
+    color: white;
+    width: 100%;
+    border-radius: 4px;
+    height: 30px;
+  }
+  .quantity{
+    display: block;
+  }
+  .signup{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+  .relatedPr {
+    flex-wrap: wrap;
+  }
+}
